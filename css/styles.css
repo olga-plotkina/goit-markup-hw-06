@@ -59,6 +59,9 @@ body {
   font-size: 14px;
   letter-spacing: 0,03em;
 }
+textarea {
+  resize: none;
+}
 
 .list {
   margin: 0;
@@ -688,6 +691,7 @@ background-image: url(../images/hover.svg);
   width: 100%;
   max-height: 581px;
   height: 80%;
+  max-height: 581px;
 
   background-color: var(--primary-white-color);
   box-shadow: 0 2px 1px 0 #00000033,
@@ -703,11 +707,42 @@ background-image: url(../images/hover.svg);
   display: block;
   width: 30px;
   height: 30px;
-  margin: 8px 8px 8px auto;
+  margin: 8px 8px 1px auto;
 
   background: var(--primary-white-color) url(../images/close-button.svg) no-repeat 50% 50%;
   border: 1px solid #0000001A;
   border-radius: 50%;
 
   cursor: pointer;
+}
+.modal-title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.form-field {
+  margin: 0 39px 10px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.form-label {
+  margin-bottom: 4px;
+}
+.form-input {
+  margin: 0;
+  padding: 12px 15px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-input::placeholder {
+  line-height: 1.1721;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.502);
+}
+.checkbox-field {
+  margin: 10px 51px 30px 54px;
 }
