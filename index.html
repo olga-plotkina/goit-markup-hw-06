@@ -404,7 +404,7 @@
             <div class="modal-title">
                 <b>Оставьте свои данные, мы вам перезвоним</b>
             </div>
-            <form>
+            <form name="form" action="">
                 <div class="form-field">
                     <label class="form-label" for="user_name">Имя</label>
                     <input class="form-input" type="text" name="username" id="user_name" autofocus />
@@ -426,9 +426,11 @@
                 </div>
             
                 <div class="checkbox-field">
-                    <input type="checkbox" name="submit" value="yes" />
-                    <label class="checkbox-label" for="submit">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    <input type="checkbox" name="policy" id="policy" />
+                    <label class="checkbox-label" for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
                 </div>
+
+                <button class="button" type="submit"></button>
             </form>
         </div>
     </div>
