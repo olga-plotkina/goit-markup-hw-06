@@ -541,7 +541,6 @@ background-image: url(../images/hover.svg);
   background-color: var(--accent-color);
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
 
   transform: translateY(100%);
 
