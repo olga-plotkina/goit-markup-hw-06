@@ -860,6 +860,8 @@ background-image: url(../images/hover.svg);
   width: 16px;
   height: 15px;
   opacity: 1;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-input {
   display: block;
@@ -877,6 +879,8 @@ background-image: url(../images/hover.svg);
   width: 16px;
   height: 15px;
   opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-input:checked ~ .check-icon-done {
   opacity: 1;
