@@ -52,7 +52,7 @@
             <!--Герой-->
             <section class="hero">
                 <h1 class="hero-title"> ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+                <button type="button" class="accent-button" data-modal-open>Заказать услугу</button>
             </section>
             <!--Преимущества-->
             <section class="section">
@@ -400,37 +400,56 @@
 <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="close-button" data-modal-close></button>
+            <button class="close-button" data-modal-close>
+                <svg class="close-icon">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
             <div class="modal-title">
                 <b>Оставьте свои данные, мы вам перезвоним</b>
             </div>
             <form name="form" action="">
                 <div class="form-field">
                     <label class="form-label" for="user_name">Имя</label>
+                    <svg class="form-icon">
+                        <use href="./images/icons.svg#icon-person-black"></use>
+                    </svg>
                     <input class="form-input" type="text" name="username" id="user_name" autofocus />
                 </div>
             
                 <div class="form-field">
                     <label class="form-label" for="phone_number">Телефон</label>
+                    <svg class="form-icon">
+                        <use href="./images/icons.svg#icon-phone-black"></use>
+                    </svg>
                     <input class="form-input" type="tel" name="phone_number" id="phone_number" />
                 </div>
             
                 <div class="form-field">
                     <label class="form-label" for="user_email">Почта</label>
+                    <svg class="form-icon">
+                        <use href="./images/icons.svg#icon-email-black"></use>
+                    </svg>
                     <input class="form-input" type="email" name="email" id="user_email" />
                 </div>
             
                 <div class="form-field">
                     <label class="form-label" for="comment">Комментарий</label>
-                    <textarea class="form-input" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    <textarea class="form-input comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
                 </div>
             
                 <div class="checkbox-field">
-                    <input type="checkbox" name="policy" id="policy" />
-                    <label class="checkbox-label" for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    <input class="checkbox-input visually-hidden" type="checkbox" name="policy" id="policy" />
+                    <svg class="check-icon">
+                        <use href="./images/icons.svg#icon-check-empty"></use>
+                    </svg>
+                    <svg class="check-icon-done">
+                        <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                    <label class="checkbox-label" for="policy"> Соглашаюсь с рассылкой и принимаю <a class="contract" href="">Условия договора</a></label>
                 </div>
 
-                <button class="button" type="submit"></button>
+                <button class="accent-button" type="submit">Отправить</button>
             </form>
         </div>
     </div>
