@@ -653,7 +653,7 @@ background-image: url(../images/hover.svg);
 }
 
 .follow {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .send-email .accent-button {
   margin-top: 0;
@@ -738,9 +738,7 @@ background-image: url(../images/hover.svg);
 
   max-width: 528px;
   width: 100%;
-  max-height: 581px;
-  height: 80%;
-  max-height: 581px;
+  min-height: 581px;
   padding: 40px 39px 40px 41px;
 
   background-color: var(--primary-white-color);
